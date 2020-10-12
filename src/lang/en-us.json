@@ -1,0 +1,14 @@
+{
+  "theTemplate": "The Template",
+  "technologies": "technologies",
+  "middleDescription": "This template was though to many devs who want efficiency and confort when start a new project.",
+  "middleInitial2": "We at ",
+  "middleDescription2": " are looking for more and more efficiency when programming, and with that in mind we have put together several useful technologies for you to start your advanced project as quickly as possible!",
+  "typescript-desc": "It is a strict syntactical superset of JavaScript and adds optional static typing to the language",
+  "redux-desc": "Is a predictable state container for JavaScript apps.",
+  "reduxSagas-desc": "Is a library that aims to make application side effects.",
+  "axios-desc": "It is a promise based HTTP client for the browser and node.js.",
+  "navigation-desc": "Is made up of some core utilities and those are then used by navigators to create the navigation structure in your app. ",
+  "styledComponents-desc": "Create simple, reusable components that can be used throughout your application.",
+  "i18n-desc": "Is an internationalization-framework written in and for JavaScript."
+}

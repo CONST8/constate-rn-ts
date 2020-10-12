@@ -1,0 +1,14 @@
+{
+  "theTemplate": "A Template",
+  "technologies": "tecnologias",
+  "middleDescription": "Este modelo foi pensado para muitos desenvolvedores que desejam eficiência e conforto ao iniciar um novo projeto.",
+  "middleInitial2": "Nós da ",
+  "middleDescription2": " buscamos cada vez mais eficiência na hora de programar, e com isso em mente juntamos várias tecnologias úteis para você iniciar seu projeto avançado da forma mais rápida possível!",
+  "typescript-desc": "É um superconjunto sintático que permite escrever JavaScript com tipagem estática opcional à linguagem.",
+  "redux-desc": "É um contêiner de estado previsível para aplicativos JavaScript.",
+  "reduxSagas-desc": "É uma biblioteca que controla atividades em segundo plano do aplicativo.",
+  "axios-desc": "É um cliente HTTP baseado em promise para gerenciar rotas do back-end.",
+  "navigation-desc": "É resposável por criar a estrutura de navegação em seu aplicativo. ",
+  "styledComponents-desc": "Crie componentes simples e reutilizáveis ​​que podem ser usados ​​em todo o seu aplicativo.",
+  "i18n-desc": "É uma estrutura de internacionalização que auxilia na criação de aplicativos multi-idiomas."
+}
