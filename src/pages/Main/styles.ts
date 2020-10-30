@@ -1,11 +1,11 @@
-import styled, {DefaultTheme} from 'styled-components/native';
+import styled from 'styled-components/native';
 import {Dimensions} from 'react-native';
 import {RectButton} from 'react-native-gesture-handler';
 const {width: WIDTH, height: HEIGHT} = Dimensions.get('window');
 
-const bg = (themes: DefaultTheme) => themes.bg;
-const primary = (themes: DefaultTheme) => themes.primary;
-const subtext = (themes: DefaultTheme) => themes.subtext;
+const bg = ({themes}: any) => themes.bg;
+const primary = ({themes}: any) => themes.primary;
+const subtext = ({themes}: any) => themes.subtext;
 
 export const SafeContainer = styled.SafeAreaView`
   background-color: ${bg};

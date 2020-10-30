@@ -1,13 +1,13 @@
 import moment from 'moment';
 
 interface FormattersTypes {
-  date: Date;
-  value: number;
-  num: number;
-  decimals: number;
-  document: String;
-  month: number;
-  dateStr: String;
+  date?: Date;
+  value?: number;
+  num?: number;
+  decimals?: number;
+  document?: String;
+  month?: number;
+  dateStr?: String;
 }
 
 const formatters = {
@@ -57,15 +57,18 @@ const formatters = {
 
   // convert formatted dates to Javascript's Date type
   toDate: ({dateStr}: FormattersTypes) => {
-    const date = new Date(dateStr);
-    return new Date(
-      date.getUTCFullYear(),
-      date.getUTCMonth(),
-      date.getUTCDate(),
-      date.getUTCHours(),
-      date.getUTCMinutes(),
-      date.getUTCSeconds(),
-    );
+    if (dateStr) {
+      const date = new Date(dateStr);
+      return new Date(
+        date.getUTCFullYear(),
+        date.getUTCMonth(),
+        date.getUTCDate(),
+        date.getUTCHours(),
+        date.getUTCMinutes(),
+        date.getUTCSeconds(),
+      );
+    }
+    return 'Pass dateStr';
   },
 
   // abbreviate large numbers for short strings  (1.000 => 1K | 1.000.000 => 1M)
