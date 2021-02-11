@@ -9,6 +9,5 @@
   "reduxSagas-desc": "Is a library that aims to make application side effects.",
   "axios-desc": "It is a promise based HTTP client for the browser and node.js.",
   "navigation-desc": "Is made up of some core utilities and those are then used by navigators to create the navigation structure in your app. ",
-  "styledComponents-desc": "Create simple, reusable components that can be used throughout your application.",
   "i18n-desc": "Is an internationalization-framework written in and for JavaScript."
 }

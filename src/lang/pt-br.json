@@ -9,6 +9,5 @@
   "reduxSagas-desc": "É uma biblioteca que controla atividades em segundo plano do aplicativo.",
   "axios-desc": "É um cliente HTTP baseado em promise para gerenciar rotas do back-end.",
   "navigation-desc": "É resposável por criar a estrutura de navegação em seu aplicativo. ",
-  "styledComponents-desc": "Crie componentes simples e reutilizáveis ​​que podem ser usados ​​em todo o seu aplicativo.",
   "i18n-desc": "É uma estrutura de internacionalização que auxilia na criação de aplicativos multi-idiomas."
 }

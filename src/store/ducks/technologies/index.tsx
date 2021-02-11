@@ -26,11 +26,6 @@ const INITIAL_STATE = {
       logo: require('../../../assets/img/navigation.png'),
     },
     {
-      title: 'Styled-Components',
-      description: 'styledComponents-desc',
-      logo: require('../../../assets/img/styled-components.png'),
-    },
-    {
       title: 'i18n',
       description: 'i18n-desc',
       logo: require('../../../assets/img/i18n.png'),

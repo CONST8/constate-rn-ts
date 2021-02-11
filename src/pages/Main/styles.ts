@@ -1,144 +1,113 @@
-import styled from 'styled-components/native';
-import {Dimensions} from 'react-native';
-import {RectButton} from 'react-native-gesture-handler';
-const {width: WIDTH, height: HEIGHT} = Dimensions.get('window');
+import {StyleSheet} from 'react-native';
+import theme from '../../themes';
 
-const bg = ({themes}: any) => themes.bg;
-const primary = ({themes}: any) => themes.primary;
-const subtext = ({themes}: any) => themes.subtext;
+const styles = StyleSheet.create({
+  SafeContainer: {
+    backgroundColor: theme[0].bg,
+    flex: 1,
+  },
+  Container: {
+    backgroundColor: theme[0].bg,
+    flex: 1,
+  },
+  ScrollView: {
+    backgroundColor: theme[0].bg,
+  },
+  SupContainer: {
+    backgroundColor: theme[0].bg,
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: 32,
+  },
+  TitleArea: {
+    width: '100%',
+    flexDirection: 'row',
+    marginVertical: 16,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  Title: {
+    color: theme[0].primary,
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+    textTransform: 'capitalize',
+  },
+  TitleImg: {
+    width: 30,
+    height: 30,
+    top: -4,
+    marginRight: 16,
+  },
+  FooterText: {
+    color: theme[0].bg,
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+    textTransform: 'uppercase',
+    letterSpacing: 8,
+    textAlign: 'center',
+  },
+  MiddleContainer: {
+    backgroundColor: theme[0].primary,
+    width: '100%',
+    borderRadius: 5,
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+  },
+  MiddleTitle: {
+    color: '#FFF',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+    textTransform: 'capitalize',
+  },
+  MiddleDescription: {
+    color: '#FFF',
+    fontSize: 14,
+    fontFamily: 'Poppins-Medium',
+    marginTop: 12,
+  },
+  ConstateText: {
+    color: '#32ff7e',
+    fontSize: 14,
+    fontFamily: 'Poppins-Bold',
+  },
+  ScrollVertical: {
+    top: -32,
+  },
+  CardArea: {
+    backgroundColor: theme[0].primary,
+    paddingBottom: 32,
+  },
+  CardContainer: {
+    backgroundColor: '#FFF',
+    padding: 16,
+    width: 290,
+    height: 180,
+    borderRadius: 5,
+    elevation: 5,
+    marginHorizontal: 8,
+  },
+  CardTitleArea: {
+    width: '100%',
+    flexDirection: 'row',
+    marginBottom: 8,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  CardTitle: {
+    color: theme[0].primary,
+    fontSize: 14,
+    fontFamily: 'Poppins-SemiBold',
+    textTransform: 'capitalize',
+  },
+  CardImg: {
+    width: 40,
+    height: 40,
+  },
+  CardDescription: {
+    color: theme[0].subtext,
+    fontSize: 14,
+    fontFamily: 'Poppins-Medium',
+  },
+});
 
-export const SafeContainer = styled.SafeAreaView`
-  background-color: ${bg};
-  flex: 1;
-`;
-export const Container = styled.View`
-  background-color: ${bg};
-  flex: 1;
-`;
-
-export const ScrollView = styled.ScrollView.attrs({
-  contentContainerStyle: {padding: 0},
-  showsVerticalScrollIndicator: false,
-})`
-  background-color: ${bg};
-`;
-
-export const SupContainer = styled.View`
-  background-color: ${bg};
-  padding: 16px 24px 32px;
-`;
-
-export const TitleArea = styled.View`
-  width: 100%;
-  flex-direction: row;
-  margin: 16px 0px;
-  justify-content: flex-start;
-  align-items: center;
-`;
-
-export const Title = styled.Text`
-  color: ${primary};
-  font-size: 18px;
-  font-family: 'Poppins-Bold';
-  text-transform: capitalize;
-`;
-
-export const TitleImg = styled.Image`
-  width: 30px;
-  height: 30px;
-  top: -4px;
-  margin-right: 16px;
-`;
-
-export const FooterText = styled.Text`
-  color: ${bg};
-  font-size: 18px;
-  font-family: 'Poppins-Bold';
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  text-align: center;
-`;
-
-//Middle
-
-export const MiddleContainer = styled(RectButton).attrs({
-  rippleColor: '#262626',
-})`
-  background-color: ${primary};
-  width: 100%;
-  border-radius: 5px;
-  padding: 16px 18px;
-`;
-
-export const MiddleTitle = styled.Text`
-  color: #fff;
-  font-size: 18px;
-  font-family: 'Poppins-Bold';
-  text-transform: capitalize;
-`;
-
-export const MiddleDescription = styled.Text`
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Poppins-Medium';
-  margin-top: 12px;
-`;
-
-export const ConstateText = styled.Text`
-  color: #32ff7e;
-  font-size: 14px;
-  font-family: 'Poppins-Bold';
-`;
-
-// Scroll Vertical
-
-export const ScrollVertical = styled.ScrollView.attrs({
-  contentContainerStyle: {paddingHorizontal: 16},
-  horizontal: true,
-  showsHorizontalScrollIndicator: false,
-})`
-  top: -32px;
-`;
-
-export const CardArea = styled.View`
-  background-color: ${primary};
-  padding-bottom: 32px;
-`;
-
-export const CardContainer = styled(RectButton).attrs({
-  rippleColor: '#e1e1e1',
-})`
-  background-color: #fff;
-  padding: 16px;
-  width: 290px;
-  height: 180px;
-  border-radius: 5px;
-  elevation: 5;
-  margin: 0 8px;
-`;
-
-export const CardTitleArea = styled.View`
-  width: 100%;
-  flex-direction: row;
-  margin-bottom: 8px;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const CardTitle = styled.Text`
-  color: ${primary};
-  font-size: 14px;
-  font-family: 'Poppins-SemiBold';
-  text-transform: capitalize;
-`;
-
-export const CardImg = styled.Image`
-  width: 40px;
-  height: 40px;
-`;
-
-export const CardDescription = styled.Text`
-  color: ${subtext};
-  font-size: 14px;
-  font-family: 'Poppins-Medium';
-`;
+export default styles;
