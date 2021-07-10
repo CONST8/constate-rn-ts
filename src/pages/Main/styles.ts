@@ -11,25 +11,26 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   ScrollView: {
-    backgroundColor: theme[0].bg,
+    backgroundColor: theme[0].primary,
   },
   SupContainer: {
     backgroundColor: theme[0].bg,
-    paddingHorizontal: 16,
+    paddingHorizontal: 24,
     paddingTop: 16,
-    paddingBottom: 32,
+    paddingBottom: 48,
   },
   TitleArea: {
     width: '100%',
     flexDirection: 'row',
-    marginVertical: 16,
+    marginVertical: 32,
+    marginTop: 32,
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
   Title: {
     color: theme[0].primary,
     fontSize: 18,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Product Sans Bold',
     textTransform: 'capitalize',
   },
   TitleImg: {
@@ -41,10 +42,10 @@ const styles = StyleSheet.create({
   FooterText: {
     color: theme[0].bg,
     fontSize: 18,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Product Sans Bold',
     textTransform: 'uppercase',
     letterSpacing: 8,
-    textAlign: 'center',
+    textAlign: 'center'
   },
   MiddleContainer: {
     backgroundColor: theme[0].primary,
@@ -56,35 +57,37 @@ const styles = StyleSheet.create({
   MiddleTitle: {
     color: '#FFF',
     fontSize: 18,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Product Sans Bold',
     textTransform: 'capitalize',
   },
   MiddleDescription: {
     color: '#FFF',
     fontSize: 14,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: 'Product Sans Regular',
     marginTop: 12,
   },
   ConstateText: {
     color: '#32ff7e',
     fontSize: 14,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Product Sans Bold',
   },
   ScrollVertical: {
-    top: -32,
+    top: -64,
   },
   CardArea: {
     backgroundColor: theme[0].primary,
     paddingBottom: 32,
+    flex: 1,
   },
   CardContainer: {
     backgroundColor: '#FFF',
     padding: 16,
     width: 290,
-    height: 180,
+    minHeight: 180,
     borderRadius: 5,
     elevation: 5,
     marginHorizontal: 8,
+    alignItems: 'center',
   },
   CardTitleArea: {
     width: '100%',
@@ -95,18 +98,20 @@ const styles = StyleSheet.create({
   },
   CardTitle: {
     color: theme[0].primary,
-    fontSize: 14,
-    fontFamily: 'Poppins-SemiBold',
+    fontSize: 16,
+    fontFamily: 'Product Sans Bold',
     textTransform: 'capitalize',
+    marginVertical: 12
   },
   CardImg: {
-    width: 40,
-    height: 40,
+    width: 64,
+    height: 64,
   },
   CardDescription: {
     color: theme[0].subtext,
     fontSize: 14,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: 'Product Sans Regular',
+    textAlign: 'center'
   },
 });
 

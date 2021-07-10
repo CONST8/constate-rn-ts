@@ -12,7 +12,6 @@ const Login: React.FC = () => {
     technologies: {data: technologies},
     theme: {theme},
   } = useSelector((state: AppStore) => state);
-
   return (
     <SafeAreaView style={[styles.SafeContainer, {backgroundColor: theme.bg}]}>
       <ScrollView
@@ -55,14 +54,13 @@ const Login: React.FC = () => {
                   style={styles.CardContainer}
                   key={index}
                   rippleColor={'#e1e1e1'}>
-                  <View style={styles.CardTitleArea}>
-                    <Text style={styles.CardTitle}>{tec.title}</Text>
-                    <Image
-                      style={styles.CardImg}
-                      source={tec.logo}
-                      resizeMode={'cover'}
-                    />
-                  </View>
+                  <Image
+                    style={styles.CardImg}
+                    source={tec.logo}
+                    resizeMode={'cover'}
+                  />
+                  <Text style={styles.CardTitle}>{tec.title}</Text>
+                  <View style={styles.CardTitleArea}></View>
                   <Text style={styles.CardDescription}>
                     {t(tec.description)}
                   </Text>
